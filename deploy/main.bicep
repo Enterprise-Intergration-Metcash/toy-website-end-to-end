@@ -67,7 +67,7 @@ var environmentConfigurationMap = {
     }
     storageAccount: {
       sku: {
-        name: 'Standard_GRS'
+        name: 'Standard_LRS'
       }
     }
     sqlDatabase: {
@@ -160,7 +160,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
       name: storageAccountImagesBlobContainerName
 
       properties: {
-        publicAccess: 'Blob'
+        publicAccess: 'None'
       }
     }
   }  
